@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Rabii ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="music" loop>
+    <source src="assets/music.mp3" type="audio/mp3">
+</audio>
+
+<div class="hearts"></div>
+
+<section class="page active" id="page1">
+    <h1>Una pequeña sorpresa para ti ❤️</h1>
+    <p>Introduce la contraseña para entrar</p>
+
+    <input id="password" maxlength="4" placeholder="••••">
+    <button onclick="checkPassword()">Entrar</button>
+
+    <p id="error"></p>
+</section>
+
+
+<section class="page" id="page2">
+    <h1>😏 ¿Pensabas que era tan fácil?</h1>
+    <p>No te dejaré entrar tan rápido, Rabii.</p>
+    <button onclick="nextPage()">Next ❤️</button>
+</section>
+
+
+<section class="page" id="page3">
+    <h1>🧠 Quiz de matemáticas</h1>
+
+    <p>1) ¿Cuánto es 12 × 8?</p>
+    <input id="q1">
+
+    <p>2) Si x + 5 = 12, ¿cuánto vale x?</p>
+    <input id="q2">
+
+    <p>3) ¿Cuánto es 100 ÷ 4?</p>
+    <input id="q3">
+
+    <p>4) ¿Cuánto es 7²?</p>
+    <input id="q4">
+
+    <p>5) Resuelve: 3x = 21</p>
+    <input id="q5">
+
+    <button onclick="mathQuiz()">Comprobar</button>
+
+    <p id="mathResult"></p>
+</section>
+
+
+<section class="page" id="page4">
+    <h1>❤️ Muy bien, Rabii</h1>
+    <p>
+    Si llegaste aquí significa que pasaste las matemáticas 😌
+    </p>
+    <button onclick="nextPage()">Next</button>
+</section>
+
+
+<section class="page" id="page5">
+    <h1>💕 Quiz sobre mí</h1>
+
+    <p>¿Cuál es mi color favorito?</p>
+    <input id="me1">
+
+    <p>¿Qué cosa me hace feliz?</p>
+    <input id="me2">
+
+    <p>¿Qué me gusta recibir de ti?</p>
+    <input id="me3">
+
+    <p>¿Qué extraño más en nuestra distancia?</p>
+    <input id="me4">
+
+    <p>¿Quién es mi persona especial?</p>
+    <input id="me5">
+
+    <button onclick="nextPage()">Terminé ❤️</button>
+</section>
+
+
+<section class="page" id="page6">
+    <h1>🎥 Un mensaje para ti</h1>
+
+    <video controls width="90%">
+        <source src="assets/video.mp4" type="video/mp4">
+    </video>
+
+    <br>
+    <button onclick="nextPage()">Next</button>
+</section>
+
+
+<section class="page" id="page7">
+    <h1>💌 Para ti, Rabii</h1>
+
+    <p>
+    Feliz 8 meses, mi amor ❤️
+
+    Gracias por cada momento, por cada conversación,
+    por las risas y por formar parte de mi vida.
+
+    Aunque estemos lejos, quiero que recuerdes
+    que eres alguien muy especial para mí.
+
+    Te quiero muchísimo ❤️
+    </p>
+
+    <h2>🎉 Fin de la sorpresa 🎉</h2>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
